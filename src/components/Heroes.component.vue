@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container">
-      <h1><strong>Busca tu heroe</strong></h1>
+    <div class="container animate__animated animate__fadeIn">
+      <h1><strong>Busca tu heroe DC</strong></h1>
 
       <input
         style="width: 50%"

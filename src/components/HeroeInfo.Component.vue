@@ -2,7 +2,7 @@
   <div>
     <div class="row mt-5">
       <!-- Imagen -->
-      <div class="imagen-hero col-md-5">
+      <div class="imagen-hero col-md-5 animate__animated animate__fadeInDown">
         <img :src="heroe.image.url" width="430" />
       </div>
 
@@ -11,7 +11,7 @@
         <!-- Info text -->
         <div class="info-hero">
           <h1 class="mb-5 d-flex align-items-end justify-content-between">
-            <strong>Heroe {{ heroe.name }}</strong>
+            <strong class="animate__animated animate__fadeInRight">Heroe {{ heroe.name }}</strong>
             <router-link class="item mt-3" to="/HeroeSearch">
               <i class="icon-arrow far fa-arrow-alt-circle-left"></i
             ></router-link>
@@ -39,7 +39,7 @@
           <h4><strong>Estadisticas de poder</strong></h4>
           <div class="progress mt-2">
             <div
-              class="progress-bar bg-warning"
+              class="progress-bar bg-warning animate__animated animate__fadeIn"
               role="progressbar"
               :style="`width: ${heroe.powerstats.power}%`"
               :aria-valuenow="heroe.powerstats.power"
@@ -50,7 +50,7 @@
             </div>
           </div>
 
-          <div class="progress mt-2">
+          <div class="progress mt-2 animate__animated animate__fadeIn animate__delay-1s">
             <div
               class="progress-bar bg-success"
               role="progressbar"
@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <div class="progress mt-2">
+          <div class="progress mt-2 animate__animated animate__fadeIn animate__delay-2s">
             <div
               class="progress-bar bg-warning"
               role="progressbar"
@@ -76,7 +76,7 @@
             </div>
           </div>
 
-          <div class="progress mt-2">
+          <div class="progress mt-2 animate__animated animate__fadeIn animate__delay-3s">
             <div
               class="progress-bar bg-success"
               role="progressbar"
@@ -89,7 +89,7 @@
             </div>
           </div>
 
-          <div class="progress mt-2">
+          <div class="progress mt-2 animate__animated animate__fadeIn animate__delay-4s">
             <div
               class="progress-bar bg-warning"
               role="progressbar"
@@ -102,7 +102,7 @@
             </div>
           </div>
 
-          <div class="progress mt-2">
+          <div class="progress mt-2 animate__animated animate__fadeIn animate__delay-5s">
             <div
               class="progress-bar bg-success"
               role="progressbar"
