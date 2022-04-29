@@ -1,19 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="row gx-0">
+    <SidebarComponent class="col-md-2"/>
+    <router-view class="col-md-10 ps-4 pe-4 pt-4"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SidebarComponent from "./components/Sidebar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SidebarComponent,
+  },
+  data() {
+    return {
+      MensajeHijoPadre: "Aqui se mostrará mensaje Hijo-Padre",
+    };
+  },
+  methods: {
+    asignarNombreHijoPadre(data) {
+      this.MensajeHijoPadre = data;
+    },
+  },
+};
 </script>
 
 <style>
@@ -21,8 +31,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>

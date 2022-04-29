@@ -1,4 +1,4 @@
-# capacitacion_vue_1
+# Heroes_vue
 
 ## Project setup
 ```
