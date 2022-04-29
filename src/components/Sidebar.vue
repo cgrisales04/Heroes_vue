@@ -8,10 +8,6 @@
         <i class="item fas fa-search me-3"></i>
         <router-link class="item" to="/HeroeSearch"> Buscar heroe</router-link>
       </li>
-      <li>
-        <i class="item fas fa-users me-3"></i>
-        <router-link class="item" to="/Heroes">Ver heroes</router-link>
-      </li>
     </ul>
   </div>
 </template>
